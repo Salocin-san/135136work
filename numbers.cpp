@@ -28,7 +28,7 @@ bool isPrime(int n)
 		return true;
 }
 
-int nextP(int n);//prototype
+int nextPrime(int n);//prototype
 	
 int main()
 {
@@ -37,7 +37,7 @@ int main()
     cout << "Enter number: ";
     cin >> n; 
        
-    int answer = nextP(n);//gives next prime number in chronological order
+    int answer = nextPrime(n);//gives next prime number in chronological order
 
 	cout << answer;
 
@@ -56,14 +56,14 @@ bool isDivisibleBy(int n, int d)
 	return false;
 }
 
-int nextP(int n)   
+int nextPrime(int n)   
 {
 	//int n;
 	//cin >> n;
 	
-	int nextP = n + 1;
-	while (!isPrime(nextP)){
-		nextP++;
+	int nextPrime = n + 1;
+	while (!isPrime(nextPrime)){
+		nextPrime++;
 	}
-	return nextP;
+	return nextPrime;
 }
