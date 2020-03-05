@@ -30,6 +30,8 @@ bool isPrime(int n)
 }
 
 int nextPrime(int n);//prototype
+
+int countPrimes(int a, int b);
 	
 int main()
 {
@@ -68,3 +70,8 @@ int nextPrime(int n)
 	}
 	return nextPrime;
 }
+
+int countPrimes(int a, int b)
+{
+	
+
